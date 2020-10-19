@@ -3,3 +3,4 @@ __pycache__/
 .idea/
 kivy_venv/
 venv/
+temp.txt

@@ -1,7 +1,7 @@
 import math
 
 
-def baby_steps_giant_steps(p, g, A):
+def calculate_key(p, g, A):
     # vypocitame strop
     N = 1 + int(math.sqrt(p))
 
@@ -14,7 +14,7 @@ def baby_steps_giant_steps(p, g, A):
         # nemusime umocnovat, staci kazdy loop vynasobit predchozi hodnotu generatorem
         baby_step = baby_step * g % p
 
-    print(baby_steps_tabulka)
+    # print(baby_steps_tabulka)
 
     # fermatovou malou vetou vypocitame g^-N (inverzni prvek)
     inverzni_k_N = pow(g, (p - 2) * N, p)
