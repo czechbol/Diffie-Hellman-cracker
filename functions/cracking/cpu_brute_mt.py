@@ -59,7 +59,7 @@ def multi(num_cpus, args):
 def crack(n: int, g: int, alicesends: int, bobsends: int, a: int, x: int, inc: int, event):
     key: int = 0
     for i in range(a, x, inc):
-        log = (g ** i) % n
+        log = pow(g, i, n)
         if log == alicesends:
             key = pow(bobsends, i, n)
             f = open("temp.txt", "w+")
