@@ -17,6 +17,6 @@ Then run the run.py file.
 
 ## Disclaimer
 
-Be careful about using big numbers, the largest number I was able to crack had a 55 bit generator and it used over 20GB of RAM (BSGS algoritm).
+Be careful about using big numbers, the largest number I was able to crack a 55 bit generator and it used over 20GB of RAM (BSGS algoritm).
 
 Multithreaded Bruteforce is time intensive and I wasn't comfortable with running it longer than an hour (30 bit generator on a 6C/12T CPU)
