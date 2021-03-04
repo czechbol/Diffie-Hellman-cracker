@@ -32,7 +32,9 @@ def isProbablePrime(n, t=7):
 
 def getPrime(n):
     """Get a n-bit prime"""
-    p = getrandbits(n)
-    while not isProbablePrime(p):
-        p = getrandbits(n)
-    return p
+    prime = getrandbits(n)
+    while not isProbablePrime(prime):
+        prime = getrandbits(n)
+        if int(repr(n)[-1]) % 2 == 0 or int(repr(n)[-1]) % 5 == 0:
+            continue
+    return prime
