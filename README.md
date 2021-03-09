@@ -11,7 +11,7 @@ This program was made as an assignment at FEEC BUT, Applied Cryptography course
 
 ## How to use:
 
-Change the variables p, g, a, b as you need. By default they are generated randomly from the generator prime, which is also randomly generated and of fixed bit size.
+Pass variables to the `DHCryptosystem.generate_form()` method as you need. By default everything gets generated from the bit size of the desired prime number.
 
 Then run the run.py file.
 
