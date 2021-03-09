@@ -11,7 +11,7 @@ This program was made as an assignment at FEEC BUT, Applied Cryptography course
 
 ## How to use:
 
-Pass variables to the `DHCryptosystem.generate_form()` method as you need. By default everything gets generated from the bit size of the desired prime number.
+Pass variables to the `DH.generate_from()` method as you need. By default everything gets generated from the bit size of the desired prime number.
 
 Then run the run.py file.
 
