@@ -35,7 +35,7 @@ def getPrime(bit_size: int) -> int:
     Returns:
         int: desired prime number
     """
-    prime = getrandbits(bit_size)
+    prime = getrandbits(bit_size)  # nosec
     while not isProbablePrime(prime):
         prime = getrandbits(bit_size)
         if int(repr(prime)[-1]) % 2 == 0 or int(repr(prime)[-1]) % 5 == 0:
